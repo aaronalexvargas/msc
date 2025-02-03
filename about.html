@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Milwaukee Security Cameras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+
+    <!-- 2.1. Navigation -->
+     <nav class="bg-[#000000] text-white fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 -ml-4">
+                    <a href="index.html">
+                    <img src="images/msc-logo.png" alt="MSC Security Systems" class="h-8">
+                    </a>
+                </div>
+
+                <!-- 2.1.1.Desktop Menu -->
+                <div class="hidden md:flex md:items-center md:space-x-4">
+                    <a href="index.html" class="text-white hover:bg-[#000000] hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    
+                    <!-- Products Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:bg-[#000000] hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-[#000000] px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="products-cctv-cameras.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">CCTV Cameras</p>
+                                            <p class="mt-1 text-sm text-gray-300">High-quality surveillance cameras for every need.</p>
+                                        </div>
+                                    </a>
+                                    <a href="products-nvr-systems.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">NVR Systems</p>
+                                            <p class="mt-1 text-sm text-gray-300">Advanced recording solutions for your security footage.</p>
+                                        </div>
+                                    </a>
+                                    <a href="products-access-control.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Access Control</p>
+                                            <p class="mt-1 text-sm text-gray-300">Secure entry systems for controlled access.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:bg-[#000000] hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            <span>Solutions</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-[#000000] px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="solutions-commercial.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Commercial Security</p>
+                                            <p class="mt-1 text-sm text-gray-300">Protect your business with our advanced security solutions.</p>
+                                        </div>
+                                    </a>
+                                    <a href="solutions-industrial.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Industrial Security</p>
+                                            <p class="mt-1 text-sm text-gray-300">Keep your home safe with our comprehensive security systems.</p>
+                                        </div>
+                                    </a>
+                                    <a href="services-remote-monitoring.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Remote Monitoring</p>
+                                            <p class="mt-1 text-sm text-gray-300">Monitor your property from anywhere with our mobile solutions.</p>
+                                        </div>
+                                    </a>
+                                    <a href="solutions-residential.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Residential Security</p>
+                                            <p class="mt-1 text-sm text-gray-300">Keep an eye on your home from anywhere using our mobile monitoring solutions.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:bg-[#000000] hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Contact
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-[#000000] px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="contact.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">Contact Us</p>
+                                        </div>
+                                    </a>
+                                    <a href="about.html" class="text-white hover:text-white hover:bg-gray-800 -m-3 p-3 flex items-start rounded-lg">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium">About</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="ml-4">
+                    <a href="design-your-system.html">  
+                        <button class="bg-[#ffffff] text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 hover:text-white transition-colors duration-200">
+                            Design Your System
+                        </button>
+                    </a>
+                    </div>
+                </div>
+
+                <!-- 2.1.2. Mobile menu button -->
+                <div class="md:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2.1.2. Mobile Menu -->
+            <div class="hidden md:hidden transition-all duration-200 ease-in-out bg-[#000000]" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Home</a>
+                    
+                    <!-- Mobile Products Dropdown -->
+                    <div class="space-y-1">
+                        <button type="button" 
+                                class="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md"
+                                onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <span>Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="hidden pl-4 space-y-1">
+                            <a href="products-cctv-cameras.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">CCTV Cameras</a>
+                            <a href="products-nvr-systems.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">NVR Systems</a>
+                            <a href="products-access-control.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Access Control</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Solutions Dropdown -->
+                    <div class="space-y-1">
+                        <button type="button" 
+                                class="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md"
+                                onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <span>Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="hidden pl-4 space-y-1">
+                            <a href="solutions-commercial.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Commercial Security</a>
+                            <a href="solutions-industrial.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Industrial Security</a>
+                            <a href="services-remote-monitoring.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Remote Monitoring</a>
+                            <a href="solutions-residential.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Residential Security</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 hover:text-white rounded-md">Contact</a>
+                    
+                    <div class="px-3 py-2">
+                        <a href="design-your-system.html">
+                        <button class="w-full bg-[#ffffff] text-black px-4 py-2 rounded-md text-base font-medium hover:bg-blue-700 hover:text-white transition-colors duration-200">
+                            Design Your System
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Milwaukee Security Cameras</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Protecting What Matters Most with Expert Solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">At Milwaukee Security Cameras, we've been providing Milwaukee and the surrounding areas with top-tier surveillance solutions for over a decade. Whether you're looking to protect your home, business, or industrial facility, we offer advanced security systems tailored to meet your unique needs.</p>
+                    <div class="flex items-center mb-6">
+                        <img src="images/profile.jpg" alt="Joe H. Signature" class="h-16 mr-4">
+                        <div>
+                            <p class="font-medium text-gray-900">Don F.</p>
+                            <p class="text-gray-600">CEO, Milwaukee Security Cameras</p>
+                            <a href="mailto:joeh@milwaukeesecuritycameras.com" class="text-blue-700 hover:text-blue-600">Dflamingo@milwaukeesecuritycameras.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://maps.app.goo.gl/wabZVLR2byVqcT6J7" target="_blank" rel="noopener noreferrer" class="order-2 md:order-1">
+                    <div class="relative h-[350px] rounded-lg overflow-hidden shadow-xl">
+                        <img src="images/msc-googlemap.png" alt="Security Camera Installation" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Our Security Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Residential -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Residential Security</h3>
+                    <p class="text-gray-600">Your family's safety is our top priority. Without a comprehensive security system, your home isn't as secure as it could be. We offer high-quality, commercial-grade equipment designed to provide peace of mind for homeowners across Wisconsin and Illinois.</p>
+                </div>
+
+                <!-- Commercial -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Commercial Security</h3>
+                    <p class="text-gray-600">For businesses, the right surveillance system can prevent theft, increase productivity, and ensure a secure environment for both employees and customers. We provide tailored security solutions for every business size, with an emphasis on reliability and long-term value.</p>
+                </div>
+
+                <!-- Industrial -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Industrial Security</h3>
+                    <p class="text-gray-600">When it comes to industrial security, we know the importance of a durable and expansive system. Our rugged, high-definition cameras are designed to cover large facilities, offering advanced features like explosion-proof and fire-resistant enclosures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Why Choose Milwaukee Security Cameras?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Premium Systems -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Premium-Grade Security Systems</h3>
+                    <p class="text-gray-600">We partner with industry-leading brands like Mobotix, Arecont, Sony, Panasonic, and Honeywell to deliver the latest in security technology.</p>
+                </div>
+
+                <!-- Comprehensive Service -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Comprehensive Service</h3>
+                    <p class="text-gray-600">From consultation and design to installation and ongoing support, our team is with you every step of the way. We provide custom integration, expert training, and unmatched customer service.</p>
+                </div>
+
+                <!-- Local Support -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Local, Personal Support</h3>
+                    <p class="text-gray-600">As a Wisconsin-owned and operated business, we pride ourselves on offering personalized service with dedicated agents and 24/7 monitoring and technical support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Approach -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
+                    <p class="text-gray-600 mb-6">At Milwaukee Security Cameras, our mission is to deliver reliable, high-quality security solutions that enhance your safety and peace of mind. By partnering with the best brands and providing exceptional customer service, we help reduce business risks, improve operational efficiency, and keep your property protected.</p>
+                    <div class="bg-blue-700 text-white p-6 rounded-lg">
+                        <h4 class="font-bold mb-2">Satisfaction Guarantee</h4>
+                        <p>Your satisfaction is our priority. If for any reason you're not completely satisfied, we'll work tirelessly to make it right.</p>
+                    </div>
+                </div>
+
+                <!-- Approach -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Approach</h3>
+                    <p class="text-gray-600 mb-6">We approach every project with enthusiasm, purpose, and a passion for innovation. Our goal is simple: to deliver security solutions with conviction, ensuring your property is protected by the most reliable systems on the market.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-900 mb-2">Custom Solutions</h4>
+                            <p class="text-gray-600">Tailored to your specific security needs</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-900 mb-2">Expert Installation</h4>
+                            <p class="text-gray-600">Professional setup and configuration</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-900 mb-2">24/7 Support</h4>
+                            <p class="text-gray-600">Round-the-clock technical assistance</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-900 mb-2">Quality Assurance</h4>
+                            <p class="text-gray-600">Industry-leading equipment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Partners -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Our Trusted Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <!-- Logo 1 -->
+                <img src="images/logos/logo-8.jpg" alt="Mobotix" class="w-36 h-auto object-contain mx-auto">
+                
+                <!-- Logo 2 -->
+                <img src="images/logos/logo-2.png" alt="Arecont" class="w-36 h-auto object-contain mx-auto">
+                <!-- Logo 3 -->
+                <img src="images/logos/logo-9.jpg" alt="Sony" class="w-36 h-auto object-contain mx-auto">
+                <!-- Logo 4 -->
+                <img src="images/logos/logo-4.png" alt="Panasonic" class="w-36 h-auto object-contain mx-auto">
+                <!-- Logo 5 -->
+                <img src="images/logos/logo-5.png" alt="Honeywell" class="w-36 h-auto object-contain mx-auto">  
+                <!-- Logo 6 -->
+                <img src="images/logos/logo-1.png" alt="Honeywell" class="w-36 h-auto object-contain mx-auto">    
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl font-semibold">Get Started with Your Commercial Security System Today</h2>
+          <p class="mt-4 text-lg">Don't leave your business vulnerable. Reach out to us now for a free consultation and start protecting what matters most.</p>
+          <div class="mt-8">
+            <a href="contact.html" class="bg-yellow-500 text-blue-800 py-3 px-6 rounded-full text-lg font-semibold">Contact Us Today</a>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <a href="index.html">
+                    <div class="flex items-center mb-6">
+                        <img src="images/msc-logo.png" alt="MSC Security Systems" class="h-10">
+                    </div>
+                    </a>
+                    <p class="text-sm mb-6">Your trusted partner in comprehensive security solutions. Protecting what matters most since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.398.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="solutions-residential.html" class="hover:text-white transition-colors duration-200">Residential</a></li>
+                        <li><a href="solutions-commercial.html" class="hover:text-white transition-colors duration-200">Commercial</a></li>
+                        <li><a href="solutions-industrial.html" class="hover:text-white transition-colors duration-200">Industrial</a></li>
+                        <li><a href="services-remote-monitoring.html" class="hover:text-white transition-colors duration-200">Remote Monitoring</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li>Milwaukee, WI</li>
+                        <li>Phone: (414) 888-9999</li>
+                        <li>Email: info@milwaukeesecuritycameras.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-blue-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <p class="text-md text-center text-white font-sans">&copy; 2025 Milwaukee Security Cameras. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
